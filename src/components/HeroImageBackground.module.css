@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 250px;
   padding-bottom: 130px;
-  background-image: url("./HeroImage.png");
+  background-image: url("/HeroImage.png");
   background-size: cover;
   background-position: center;
 
