@@ -1,4 +1,4 @@
-import { Center, Container, Title, Text } from "@mantine/core";
+import { Center, Container, Title, Text, Image } from "@mantine/core";
 
 export default function Prices() {
   return (
@@ -8,6 +8,11 @@ export default function Prices() {
           <Title pt={75} order={2}>
             About
           </Title>
+        </Center>
+      </Container>
+      <Container>
+        <Center>
+          <Image radius={"md"} src={"./profile.png"} w={200} pb={35} />
         </Center>
       </Container>
       <Container size={500}>
