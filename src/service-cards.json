@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "./prenatalCard.jpg",
+    "image": "./prenatalCard.png",
     "title": "Prenatal Comfort Massage",
     "description": "Soothing, side-lying massage tailored to support comfort, circulation, and rest during pregnancy.",
     "price": "60 min — $55",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "image": "./firmAndTrueCard.jpg",
+    "image": "./firmAndTrueCard.png",
     "title": "Firm and True",
     "description": "Grounded, focused work to release deeper layers of tension with care.",
     "price": "60 min — $65",
@@ -18,7 +18,7 @@
   },
   {
     "id": 3,
-    "image": "./swedishCard.jpg",
+    "image": "./swedishCard.png",
     "title": "Gentle and Poetic Swedish",
     "description": "Soft, rhythmic touch to support relaxation, grounding, and gentle renewal.",
     "price": "60 min — $65",
@@ -27,7 +27,7 @@
   },
   {
     "id": 4,
-    "image": "./signatureSensoryCard.jpg",
+    "image": "./signatureSensoryCard.png",
     "title": "Signature Sensory Massage",
     "description": "A grounding, full-body sensory massage designed to calm the nervous system and restore quiet presence through warmth, rhythm, sound, and grounding hymalayan salt elements.",
     "price": "90 min — $160",
@@ -35,7 +35,7 @@
   },
   {
     "id": 5,
-    "image": "./stillWatersResetCard.jpg",
+    "image": "./stillWatersResetCard.png",
     "title": "Still Waters Reset (Lymphatic)",
     "description": "A gentle, flowing session designed to calm the nervous system, encourage fluid balance, and restore inner steadiness.",
     "price": "75 min — $75",
@@ -43,7 +43,7 @@
   },
   {
     "id": 6,
-    "image": "./zenShiatsuCard.jpg",
+    "image": "./zenShiatsuCard.png",
     "title": "ZEN Shiatsu",
     "description": "Meridian balancing with full-body rocking and compressions. (Fully clothed — wear soft, comfortable clothing)",
     "price": "30 min — $30",
