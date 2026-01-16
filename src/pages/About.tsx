@@ -1,4 +1,4 @@
-import { Center, Container, Title, Text, Image, Card } from "@mantine/core";
+import { Center, Container, Title, Text, Image } from "@mantine/core";
 
 export default function Prices() {
   return (
