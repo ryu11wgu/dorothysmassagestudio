@@ -48,7 +48,7 @@ export default function Home() {
         </SimpleGrid>
       </Container>
 
-      <Container size={500} pb={35}>
+      <Container size={500} pb={25}>
         <Center>
           <Title order={2} p={25}>
             Studio Hours
