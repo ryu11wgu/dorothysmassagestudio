@@ -11,7 +11,7 @@
     "id": 2,
     "image": "./firmAndTrueCard.png",
     "title": "Firm and True",
-    "description": "Grounded, focused work to release deeper layers of tension with care.",
+    "description": "A medium-to-firm pressure therapeutic session designed for clients who benefit from deeper muscle work to address chronic tension. Focused on relieving tight areas while maintaining comfort and professional care.",
     "price": "60 min — $65",
     "price2": "75 min — $80",
     "price3": "90 min — $100"
@@ -20,7 +20,7 @@
     "id": 3,
     "image": "./swedishCard.png",
     "title": "Gentle and Poetic Swedish",
-    "description": "Soft, rhythmic touch to support relaxation, grounding, and gentle renewal.",
+    "description": "A nurturing, light-touch session created for clients who require minimal pressure due to medical concerns, physical sensitivity, or recovery needs. Ideal for promoting relaxation, comfort, and gentle nervous system support.",
     "price": "60 min — $65",
     "price2": "75 min — $80",
     "price3": "90 min — $100"
@@ -29,7 +29,7 @@
     "id": 4,
     "image": "./signatureSensoryCard.png",
     "title": "Signature Sensory Massage",
-    "description": "A grounding, full-body sensory massage designed to calm the nervous system and restore quiet presence through warmth, rhythm, sound, and grounding hymalayan salt elements.",
+    "description": "A sensory-based therapeutic experience designed for clients who enjoy entering deep meditative states during bodywork. Sound elements, tuning forks, and Himalayan warm salt stones are incorporated to support focused awareness and nervous system regulation. This session may create a gentle sense of anticipation and heightened presence rather than simple relaxation.",
     "price": "90 min — $160",
     "price2": "120 min — $240 (Extended Retreat)"
   },
@@ -37,7 +37,7 @@
     "id": 5,
     "image": "./stillWatersResetCard.png",
     "title": "Still Waters Reset (Lymphatic)",
-    "description": "A gentle, flowing session designed to calm the nervous system, encourage fluid balance, and restore inner steadiness.",
+    "description": "A gentle lymphatic-focused massage designed to support circulation, lymphatic movement, and natural detox pathways. This light-touch session is ideal for clients seeking swelling reduction, immune system support, and deep nervous system calming.",
     "price": "75 min — $75",
     "price2": null
   },
