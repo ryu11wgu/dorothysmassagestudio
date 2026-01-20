@@ -17,6 +17,15 @@ export default function Prices() {
       </Container>
       <Container size={500} pb={25}>
         <Center>
+          <Text>
+            A private therapeutic massage practice supporting clients in
+            physical therapy, post-surgical and cancer recovery, and medically
+            sensitive care, while also welcoming individuals who seek
+            meditative, mindful bodywork. Sessions may be coordinated alongside
+            healthcare providers when needed.
+          </Text>
+        </Center>
+        <Center>
           <Title order={4} pt={25}>
             Meet Your Massage Therapist
             <br />

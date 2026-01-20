@@ -10,6 +10,15 @@ export default function Contact() {
           </Title>
         </Center>
       </Container>
+      <Container size={500} pb={25}>
+        <Center>
+          <Text>
+            This practice focuses on therapeutic massage supporting recovery,
+            medically sensitive care, and meditative bodywork. Sessions may be
+            coordinated alongside healthcare providers when needed.
+          </Text>
+        </Center>
+      </Container>
       <Container>
         <Center>
           <Paper shadow="md" bg={"teal"} c={"white"} p={25} mb={25}>
