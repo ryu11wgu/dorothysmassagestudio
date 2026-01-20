@@ -14,7 +14,7 @@ export default function Contact() {
         <Center>
           <Paper shadow="md" bg={"teal"} c={"white"} p={25} mb={25}>
             <Text>By Appointment Only. Please text.</Text>
-            <Title order={5}>Phone: (279) 348 - 9751</Title>
+            <Title order={5}>Phone: (661) 405 - 4079</Title>
           </Paper>
         </Center>
       </Container>
