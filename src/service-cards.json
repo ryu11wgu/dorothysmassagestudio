@@ -30,8 +30,9 @@
     "image": "./signatureSensoryCard.png",
     "title": "Signature Sensory Massage",
     "description": "A sensory-based therapeutic experience designed for clients who enjoy entering deep meditative states during bodywork. Sound elements, tuning forks, and Himalayan warm salt stones are incorporated to support focused awareness and nervous system regulation. This session may create a gentle sense of anticipation and heightened presence rather than simple relaxation.",
-    "price": "90 min — $160",
-    "price2": "120 min — $240 (Extended Retreat)"
+    "price": "75 min — $75",
+    "price2": "90 min — $160",
+    "price3": "120 min — $240 (Extended Retreat)"
   },
   {
     "id": 5,
