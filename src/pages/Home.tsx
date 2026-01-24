@@ -42,9 +42,9 @@ export default function Home() {
       </Container>
       <Container>
         <SimpleGrid cols={3} pb={50}>
-          <Image radius="md" src="/opening.png" />
-          <Image radius="md" src="/hallway.jpg" />
-          <Image radius="md" src="/20250506_105931.jpg" />
+          <Image radius="md" src="/carousel-photos/carousel-photo-1.png" />
+          <Image radius="md" src="/carousel-photos/carousel-photo-2.png" />
+          <Image radius="md" src="/carousel-photos/carousel-photo-3.png" />
         </SimpleGrid>
       </Container>
 
