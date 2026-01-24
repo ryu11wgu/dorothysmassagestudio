@@ -2,6 +2,7 @@ import {
   Center,
   Container,
   Table,
+  Text,
   Title,
   SimpleGrid,
   Image,
@@ -53,6 +54,9 @@ export default function Home() {
           <Title order={2} p={25}>
             Studio Hours
           </Title>
+        </Center>
+        <Center pb={5}>
+          <Text>By appointment only</Text>
         </Center>
 
         <Table striped withTableBorder withColumnBorders>
