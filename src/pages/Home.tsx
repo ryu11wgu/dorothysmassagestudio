@@ -34,14 +34,16 @@ export default function Home() {
         <Center p={35}>
           <p>
             Book your appointment with Dorothy, a seasoned massage therapist and
-            healing practitioner with over 25 years of experience. Since 1996,
-            she has offerred a mindful, intuitive touch-customized treatments
-            designed to calm the nervous system, release tension, and revitalize
-            both body and mind.
+            healing practitioner with over 25 years of experience.
+            <br />
+            <br />
+            Since 1996, she has offerred a mindful, intuitive touch-customized
+            treatments designed to calm the nervous system, release tension, and
+            revitalize both body and mind.
           </p>
         </Center>
       </Container>
-      <Container>
+      <Container size={650}>
         <SimpleGrid cols={3} pb={50}>
           <Image radius="md" src="/carousel-photos/carousel-photo-1.png" />
           <Image radius="md" src="/carousel-photos/carousel-photo-2.png" />
@@ -56,7 +58,7 @@ export default function Home() {
           </Title>
         </Center>
         <Center pb={5}>
-          <Text>By appointment only</Text>
+          <Text>By appointment only.</Text>
         </Center>
 
         <Table striped withTableBorder withColumnBorders>
