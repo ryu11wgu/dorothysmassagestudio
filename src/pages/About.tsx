@@ -17,7 +17,7 @@ export default function Prices() {
       </Container>
       <Container size={500} pb={25}>
         <Center>
-          <Text>
+          <Text size="s" fs={"italic"}>
             A private therapeutic massage practice supporting clients in
             physical therapy, post-surgical and cancer recovery, and medically
             sensitive care, while also welcoming individuals who seek
