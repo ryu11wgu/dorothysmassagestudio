@@ -32,7 +32,7 @@ export function HeaderSimple() {
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
-        <img src="./logo.png" width={130} />
+        <img src="./logo.png" width={80} />
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>
