@@ -1,5 +1,6 @@
-import { Center, Container, Title } from "@mantine/core";
+import { Center, Container, Title, Button } from "@mantine/core";
 import Card from "../components/Card";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
@@ -13,6 +14,21 @@ export default function Services() {
       </Container>
       <Container pb={25}>
         <Card />
+      </Container>
+
+      <Container>
+        <Center>
+          <Button
+            component={Link}
+            to={"/contact"}
+            mb={35}
+            variant="filled"
+            color="teal"
+            size="md"
+          >
+            Book Now
+          </Button>
+        </Center>
       </Container>
     </>
   );

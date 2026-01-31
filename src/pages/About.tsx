@@ -1,4 +1,5 @@
-import { Center, Container, Title, Text, Image } from "@mantine/core";
+import { Center, Container, Title, Text, Image, Button } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 export default function Prices() {
   return (
@@ -56,6 +57,21 @@ export default function Prices() {
             feel truly cared for — not rushed, not overlooked — but fully
             supported in their healing and well-being.
           </Text>
+        </Center>
+      </Container>
+
+      <Container>
+        <Center>
+          <Button
+            component={Link}
+            to={"/contact"}
+            mb={35}
+            variant="filled"
+            color="teal"
+            size="md"
+          >
+            Book Now
+          </Button>
         </Center>
       </Container>
     </>
