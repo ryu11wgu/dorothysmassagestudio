@@ -49,5 +49,14 @@
     "description": "Meridian balancing with full-body rocking and compressions. (Fully clothed — wear soft, comfortable clothing)",
     "price": "30 min — $30",
     "price2": null
+  },
+  {
+    "id": 6,
+    "image": "./stillnessRecoveryMassage.png",
+    "title": "Stillnes Recovery Massage",
+    "description": "A gentle, restorative massage designed to support comfort, circulation, lymphatic flow, and relaxation during post-oncology and post-surgical recovery. Each session is carefully adapted to your healing stage, sensitivity level, and individual needs, promoting calm, balance, and supportive body awareness.",
+    "price": "60 min — $65",
+    "price2": "75 min — $80",
+    "price3": "90 min — $100"
   }
 ]
