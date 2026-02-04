@@ -14,8 +14,7 @@ export function HeroImageBackground() {
 
         <Container size={640}>
           <Text size="lg" className={classes.description}>
-            Where your body softens, your mind quiets, and your spirit returns
-            to center
+            Where your body softens, your mind quiets and your spirit centers
           </Text>
         </Container>
 

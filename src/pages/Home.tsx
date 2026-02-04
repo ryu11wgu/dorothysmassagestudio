@@ -37,8 +37,8 @@ export default function Home() {
             healing practitioner with over 25 years of experience.
             <br />
             <br />
-            Since 1996, she has offered a mindful, intuitive touch-customized
-            treatments designed to calm the nervous system, release tension, and
+            Since 1996, she has offered mindful, intuitive touch-customized
+            treatments designed to calm the nervous system, release tension and
             revitalize both body and mind.
           </p>
         </Center>
