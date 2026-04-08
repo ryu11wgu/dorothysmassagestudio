@@ -5,7 +5,8 @@
     "title": "Prenatal Comfort Massage",
     "description": "Soothing, side-lying massage tailored to support comfort, circulation, and rest during pregnancy.",
     "price": "60 min — $55",
-    "price2": null
+    "price2": null,
+    "price3": null
   },
   {
     "id": 2,
@@ -40,7 +41,8 @@
     "title": "Still Waters Reset (Lymphatic)",
     "description": "A gentle lymphatic-focused massage designed to support circulation, lymphatic movement, and natural detox pathways. This light-touch session is ideal for clients seeking swelling reduction, immune system support, and deep nervous system calming.",
     "price": "75 min — $75",
-    "price2": null
+    "price2": null,
+    "price3": null
   },
   {
     "id": 6,
@@ -48,12 +50,13 @@
     "title": "ZEN Shiatsu",
     "description": "Meridian balancing with full-body rocking and compressions. (Fully clothed — wear soft, comfortable clothing)",
     "price": "30 min — $30",
-    "price2": null
+    "price2": null,
+    "price3": null
   },
   {
-    "id": 6,
+    "id": 7,
     "image": "./stillnessRecoveryMassage.png",
-    "title": "Stillnes Recovery Massage",
+    "title": "Stillness Recovery Massage",
     "description": "A gentle, restorative massage designed to support comfort, circulation, lymphatic flow, and relaxation during post-oncology and post-surgical recovery. Each session is carefully adapted to your healing stage, sensitivity level, and individual needs, promoting calm, balance, and supportive body awareness.",
     "price": "60 min — $65",
     "price2": "75 min — $80",

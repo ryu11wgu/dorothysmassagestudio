@@ -1,7 +1,7 @@
 import { Center, Container, Title, Text, Image, Button } from "@mantine/core";
 import { Link } from "react-router-dom";
 
-export default function Prices() {
+export default function About() {
   return (
     <>
       <Container size={500} p={35}>
@@ -13,12 +13,18 @@ export default function Prices() {
       </Container>
       <Container>
         <Center>
-          <Image radius={"md"} src={"./profile.png"} w={200} pb={35} />
+          <Image
+            radius="md"
+            src="/profile.png"
+            w={200}
+            pb={35}
+            alt="Dorothy, massage therapist"
+          />
         </Center>
       </Container>
       <Container size={500} pb={25}>
         <Center>
-          <Text size="s" fs={"italic"}>
+          <Text size="sm" fs="italic">
             A private therapeutic massage practice supporting clients in
             physical therapy, post-surgical and cancer recovery, and medically
             sensitive care, while also welcoming individuals who seek
@@ -37,7 +43,7 @@ export default function Prices() {
           <Text>
             Hi, I'm Dorothy — a licensed massage therapist offering private,
             appointment-only sessions focused on therapeutic care, relaxation,
-            and nerovus-system support.
+            and nervous-system support.
             <br />
             <br />
             My work blends skilled bodywork with a calm, attentive presence,
