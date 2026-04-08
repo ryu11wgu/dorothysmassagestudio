@@ -4,7 +4,18 @@ import type { Service } from "../types/service";
 
 export default function ServiceCards() {
   const cards = (serviceCards as Service[]).map((item) => (
-    <Card key={item.id} shadow="sm" padding="lg" radius="md" withBorder>
+    <Card
+      key={item.id}
+      shadow="sm"
+      padding="lg"
+      radius="md"
+      withBorder
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100%",
+      }}
+    >
       <Card.Section>
         <Image src={item.image} height={160} alt={item.title} />
       </Card.Section>
@@ -13,18 +24,11 @@ export default function ServiceCards() {
         <Text fw={500}>{item.title}</Text>
       </Group>
 
-      <Text size="sm" c="dimmed" pb={90}>
+      <Text size="sm" c="dimmed">
         {item.description}
       </Text>
 
-      <Box
-        style={{
-          position: "absolute",
-          bottom: "var(--mantine-spacing-lg)",
-          left: "var(--mantine-spacing-lg)",
-          right: "var(--mantine-spacing-lg)",
-        }}
-      >
+      <Box mt="auto" pt="md">
         <Text fw={1000}>{item.price}</Text>
         {item.price2 && <Text fw={1000}>{item.price2}</Text>}
         {item.price3 && <Text fw={1000}>{item.price3}</Text>}
