@@ -1,27 +1,19 @@
 import "@mantine/core/styles.css";
 import { theme } from "./theme";
 import { HeaderSimple } from "./components/HeaderSimple";
-import { Outlet } from "react-router-dom";
-import {
-  AppShell,
-  Burger,
-  NavLink,
-  Button,
-  Center,
-  MantineProvider,
-} from "@mantine/core";
+import { Outlet, NavLink as RouterNavLink } from "react-router-dom";
+import { AppShell, Burger, NavLink, MantineProvider } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { Link } from "react-router-dom";
 
 const links = [
-  { link: "/home", label: "Home" },
+  { link: "/", label: "Home", end: true },
   { link: "/about", label: "About" },
-  { link: "/Services", label: "Services" },
-  { link: "/Contact", label: "Contact" },
+  { link: "/services", label: "Services" },
+  { link: "/contact", label: "Contact" },
 ];
 
 export default function App() {
-  const [opened, { toggle }] = useDisclosure();
+  const [opened, { toggle, close }] = useDisclosure(false);
 
   return (
     <MantineProvider theme={theme}>
@@ -31,7 +23,7 @@ export default function App() {
         navbar={{
           width: 300,
           breakpoint: "sm",
-          collapsed: { mobile: !opened, desktop: !opened },
+          collapsed: { mobile: !opened, desktop: true },
         }}
       >
         <AppShell.Header>
@@ -39,25 +31,22 @@ export default function App() {
           <HeaderSimple />
         </AppShell.Header>
 
-        <AppShell.Navbar onClick={toggle}>
-          {links.map((link) => (
+        <AppShell.Navbar p="md">
+          {links.map((item) => (
             <NavLink
-              key={link.label}
-              component={Link}
-              to={link.link}
-              label={
-                <Center>
-                  <Button fullWidth color="teal" size="xl">
-                    {link.label}
-                  </Button>
-                </Center>
-              }
+              key={item.label}
+              component={RouterNavLink}
+              to={item.link}
+              end={item.end}
+              label={item.label}
+              onClick={close}
             />
           ))}
         </AppShell.Navbar>
-        {/* <AppShell.Main> */}
-        <Outlet />
-        {/* </AppShell.Main> */}
+
+        <AppShell.Main>
+          <Outlet />
+        </AppShell.Main>
       </AppShell>
     </MantineProvider>
   );
