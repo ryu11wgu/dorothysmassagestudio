@@ -6,9 +6,9 @@ import {
   Title,
   SimpleGrid,
   Image,
+  Stack,
 } from "@mantine/core";
 import { HeroImageBackground } from "../components/HeroImageBackground";
-import {} from "@mantine/core";
 
 export default function Home() {
   const elements = [
@@ -27,49 +27,64 @@ export default function Home() {
       <Table.Td>{element.hours}</Table.Td>
     </Table.Tr>
   ));
+
   return (
     <>
       <HeroImageBackground />
-      <Container size={700}>
-        <Center p={35}>
-          <p>
+
+      <Container size="xs" py="xl">
+        <Stack gap="md">
+          <Title order={2} ta="center">
+            Therapeutic care with over 25 years of experience
+          </Title>
+
+          <Text size="md">
             Book your appointment with Dorothy, a seasoned massage therapist and
             healing practitioner with over 25 years of experience.
-            <br />
-            <br />
+          </Text>
+
+          <Text size="md">
             Since 1996, she has offered mindful, intuitive touch-customized
-            treatments designed to calm the nervous system, release tension and
+            treatments designed to calm the nervous system, release tension, and
             revitalize both body and mind.
-          </p>
-        </Center>
+          </Text>
+        </Stack>
       </Container>
-      <Container size={650}>
-        <SimpleGrid cols={3} pb={50}>
-          <Image radius="md" src="/carousel-photos/carousel-1.png" />
-          <Image radius="md" src="/carousel-photos/carousel-2.png" />
-          <Image radius="md" src="/carousel-photos/carousel-3.png" />
+
+      <Container size="md" pb="xl">
+        <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} spacing="lg">
+          <Image
+            radius="md"
+            src="/carousel-photos/carousel-1.png"
+            alt="Massage studio interior"
+          />
+          <Image
+            radius="md"
+            src="/carousel-photos/carousel-2.png"
+            alt="Massage studio treatment space"
+          />
+          <Image
+            radius="md"
+            src="/carousel-photos/carousel-3.png"
+            alt="Massage studio atmosphere"
+          />
         </SimpleGrid>
       </Container>
 
-      <Container size={500} pb={25}>
+      <Container size="sm" pb="xl">
         <Center>
-          <Title order={2} p={25}>
-            Studio Hours
-          </Title>
-        </Center>
-        <Center pb={5}>
-          <Text>By appointment only.</Text>
-        </Center>
+          <Stack gap="xs" w="100%">
+            <Title order={2} ta="center">
+              Studio Hours
+            </Title>
 
-        <Table striped withTableBorder withColumnBorders>
-          <Table.Thead>
-            {/* <Table.Tr>
-              <Table.Th></Table.Th>
-              <Table.Th></Table.Th>
-            </Table.Tr> */}
-          </Table.Thead>
-          <Table.Tbody>{rows}</Table.Tbody>
-        </Table>
+            <Text ta="center">By appointment only.</Text>
+
+            <Table striped withTableBorder withColumnBorders>
+              <Table.Tbody>{rows}</Table.Tbody>
+            </Table>
+          </Stack>
+        </Center>
       </Container>
     </>
   );
