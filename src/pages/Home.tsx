@@ -9,19 +9,10 @@ import {
   Stack,
 } from "@mantine/core";
 import { HeroImageBackground } from "../components/HeroImageBackground";
+import { businessInfo } from "../data/business-info";
 
 export default function Home() {
-  const elements = [
-    { day: "Monday", hours: "8:00 am - 10:00 pm" },
-    { day: "Tuesday", hours: "8:00 am - 10:00 pm" },
-    { day: "Wednesday", hours: "7:00 pm - 10:00 pm" },
-    { day: "Thursday", hours: "8:00 am - 10:00 pm" },
-    { day: "Friday", hours: "8:00 am - 10:00 pm" },
-    { day: "Saturday", hours: "8:00 am - 10:00 pm" },
-    { day: "Sunday", hours: "Closed" },
-  ];
-
-  const rows = elements.map((element) => (
+  const rows = businessInfo.hours.map((element) => (
     <Table.Tr key={element.day}>
       <Table.Td>{element.day}</Table.Td>
       <Table.Td>{element.hours}</Table.Td>
@@ -35,19 +26,14 @@ export default function Home() {
       <Container size="xs" py="xl">
         <Stack gap="md">
           <Title order={2} ta="center">
-            Therapeutic care with over 25 years of experience
+            {businessInfo.homeIntroTitle}
           </Title>
 
-          <Text size="md">
-            Book your appointment with Dorothy, a seasoned massage therapist and
-            healing practitioner with over 25 years of experience.
-          </Text>
-
-          <Text size="md">
-            Since 1996, she has offered mindful, intuitive touch-customized
-            treatments designed to calm the nervous system, release tension, and
-            revitalize both body and mind.
-          </Text>
+          {businessInfo.homeIntroParagraphs.map((paragraph) => (
+            <Text key={paragraph} size="md">
+              {paragraph}
+            </Text>
+          ))}
         </Stack>
       </Container>
 
