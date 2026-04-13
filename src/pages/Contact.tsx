@@ -40,16 +40,13 @@ export default function Contact() {
       </Container>
 
       <Container size="sm" pb="md">
-        <Stack gap={4} align="center">
+        <Stack gap={0} align="center">
           <Title order={4}>Location</Title>
-          <Text ta="center">
-            {businessInfo.addressLines.map((line) => (
-              <span key={line}>
-                {line}
-                <br />
-              </span>
-            ))}
-          </Text>
+          {businessInfo.addressLines.map((line) => (
+            <Text key={line} ta="center">
+              {line}
+            </Text>
+          ))}
         </Stack>
       </Container>
 
