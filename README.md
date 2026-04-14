@@ -2,7 +2,7 @@
 
 A business website built for Dorothy's Massage Studio using React, TypeScript, Vite, Mantine UI, and React Router.
 
-This project was created to support a massage therapy practice by providing a clear, mobile-friendly website where clients can learn about services, view business information, and contact the studio. The site is being actively improved to strengthen usability, responsiveness, maintainability, and overall presentation for a business setting.
+This project was created to support a massage therapy practice by providing a clear, mobile-friendly website where clients can learn about services, view business information, and contact the studio. The site is being actively improved to strengthen usability, responsiveness, maintainability, and overall presentation for a real business setting.
 
 ## Overview
 
@@ -21,12 +21,14 @@ Its purpose is to present the business clearly, communicate the services offered
 - Shared app layout with routed page rendering
 - Home, About, Services, and Contact pages
 - Responsive services grid
-- Static service and pricing data stored in JSON
 - Reusable UI components
+- Centralized business content for contact details, hours, and homepage messaging
+- Static service and pricing data stored separately from UI rendering
 - Embedded Google Maps location
 - Mobile-friendly navigation
 - Click-to-call contact support
 - Responsive image sections and business-hours display
+- Shared Mantine theme defaults for more consistent styling
 
 ## Tech Stack
 
@@ -40,16 +42,20 @@ Its purpose is to present the business clearly, communicate the services offered
 
     src/
       components/
+      data/
       pages/
       types/
       service-cards.json
+      theme.ts
 
 ### Structure Notes
 
 - `components/` contains reusable UI components such as navigation, hero sections, and service cards
+- `data/` contains shared business content used across pages
 - `pages/` contains routed page-level components
 - `types/` contains shared TypeScript types
 - `service-cards.json` stores service and pricing content separately from UI rendering
+- `theme.ts` contains shared Mantine theme defaults for consistent UI styling
 
 ## Development Focus
 
@@ -60,7 +66,9 @@ This project is being improved in structured phases to make it cleaner, more mai
 - renaming vague components for clarity
 - cleaning up service card content data
 - fixing service card layout overlap issues
-- improving page structure for readability and responsiveness
+- improving Home, Contact, and About page structure for readability and responsiveness
+- centralizing shared business content
+- adding shared Mantine theme defaults for more consistent styling
 
 ## Planned Features
 
