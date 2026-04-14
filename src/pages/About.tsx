@@ -1,77 +1,62 @@
-import { Center, Container, Title, Text, Image, Button } from "@mantine/core";
+import {
+  Button,
+  Center,
+  Container,
+  Image,
+  Stack,
+  Text,
+  Title,
+} from "@mantine/core";
 import { Link } from "react-router-dom";
+
+const aboutParagraphs = [
+  "Hi, I'm Dorothy — a licensed massage therapist offering private, appointment-only sessions focused on therapeutic care, relaxation, and nervous-system support.",
+  "My work blends skilled bodywork with a calm, attentive presence, creating sessions that are both effective and deeply restorative. Clients come seeking relief from tension, chronic discomfort, stress, and emotional fatigue — and leave feeling more grounded, supported, and at ease.",
+  "I maintain a small, private practice so I can offer unrushed, personalized care in a peaceful and respectful environment. Each session is thoughtfully tailored to the individual, allowing space for the body to soften, reset, and restore naturally.",
+  "My intention is to provide a safe, welcoming space where clients feel truly cared for — not rushed, not overlooked — but fully supported in their healing and well-being.",
+];
 
 export default function About() {
   return (
     <>
-      <Container size={500} p={35}>
-        <Center>
-          <Title pt={75} order={2}>
-            About
-          </Title>
-        </Center>
-      </Container>
-      <Container>
-        <Center>
+      <Container size="sm" py="xl">
+        <Stack gap="lg" align="center">
+          <Title order={2}>About</Title>
+
           <Image
             radius="md"
             src="/profile.png"
             w={200}
-            pb={35}
             alt="Dorothy, massage therapist"
           />
-        </Center>
-      </Container>
-      <Container size={500} pb={25}>
-        <Center>
-          <Text size="sm" fs="italic">
+
+          <Text size="sm" fs="italic" ta="center" maw={600}>
             A private therapeutic massage practice supporting clients in
             physical therapy, post-surgical and cancer recovery, and medically
             sensitive care, while also welcoming individuals who seek
             meditative, mindful bodywork. Sessions may be coordinated alongside
             healthcare providers when needed.
           </Text>
-        </Center>
-        <Center>
-          <Title order={4} pt={25}>
-            Meet Your Massage Therapist
-            <br />
-            <br />
-          </Title>
-        </Center>
-        <Center>
-          <Text>
-            Hi, I'm Dorothy — a licensed massage therapist offering private,
-            appointment-only sessions focused on therapeutic care, relaxation,
-            and nervous-system support.
-            <br />
-            <br />
-            My work blends skilled bodywork with a calm, attentive presence,
-            creating sessions that are both effective and deeply restorative.
-            Clients come seeking relief from tension, chronic discomfort,
-            stress, and emotional fatigue — and leave feeling more grounded,
-            supported, and at ease.
-            <br />
-            <br />
-            I maintain a small, private practice so I can offer unrushed,
-            personalized care in a peaceful and respectful environment. Each
-            session is thoughtfully tailored to the individual, allowing space
-            for the body to soften, reset, and restore naturally.
-            <br />
-            <br />
-            My intention is to provide a safe, welcoming space where clients
-            feel truly cared for — not rushed, not overlooked — but fully
-            supported in their healing and well-being.
-          </Text>
-        </Center>
+        </Stack>
       </Container>
 
-      <Container>
+      <Container size="xs" pb="xl">
+        <Stack gap="md">
+          <Title order={4} ta="center">
+            Meet Your Massage Therapist
+          </Title>
+
+          {aboutParagraphs.map((paragraph) => (
+            <Text key={paragraph}>{paragraph}</Text>
+          ))}
+        </Stack>
+      </Container>
+
+      <Container pb="xl">
         <Center>
           <Button
             component={Link}
-            to={"/contact"}
-            mb={35}
+            to="/contact"
             variant="filled"
             color="teal"
             size="md"
