@@ -16,6 +16,7 @@ export const businessInfo = {
   homeIntroParagraphs: [
     "Book your appointment with Dorothy, a seasoned massage therapist and healing practitioner with over 25 years of experience.",
     "Since 1996, she has offered mindful, intuitive touch-customized treatments designed to calm the nervous system, release tension, and revitalize both body and mind.",
+    "Sessions are designed to support the body's natural healing process.",
   ],
   contactIntro:
     "This practice focuses on therapeutic massage supporting recovery, medically sensitive care, and meditative bodywork. Sessions may be coordinated alongside healthcare providers when needed.",

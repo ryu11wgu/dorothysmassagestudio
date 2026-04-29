@@ -1,4 +1,4 @@
-import { Center, Container, Title, Button } from "@mantine/core";
+import { Center, Container, Title, Button, Text } from "@mantine/core";
 import ServiceCards from "../components/ServiceCards";
 import { Link } from "react-router-dom";
 
@@ -10,6 +10,9 @@ export default function Services() {
           <Title pt={75} order={2}>
             Services
           </Title>
+          <Text ta="center" c="dimmed" maw={600}>
+            Sessions are designed to support the body's natural healing process.
+          </Text>
         </Center>
       </Container>
 
