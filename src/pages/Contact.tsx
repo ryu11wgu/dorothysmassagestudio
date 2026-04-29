@@ -15,8 +15,6 @@ export default function Contact() {
       <Container size="sm" py="xl">
         <Stack gap="md" align="center">
           <Title order={2}>Contact</Title>
-
-          <Text maw={600}>{businessInfo.contactIntro}</Text>
         </Stack>
       </Container>
 
