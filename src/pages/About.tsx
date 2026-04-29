@@ -29,14 +29,6 @@ export default function About() {
             w={200}
             alt="Dorothy, massage therapist"
           />
-
-          <Text size="sm" fs="italic" ta="center" maw={600}>
-            A private therapeutic massage practice supporting clients in
-            physical therapy, post-surgical and cancer recovery, and medically
-            sensitive care, while also welcoming individuals who seek
-            meditative, mindful bodywork. Sessions may be coordinated alongside
-            healthcare providers when needed.
-          </Text>
         </Stack>
       </Container>
 
