@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   Anchor,
   Center,
@@ -7,9 +8,54 @@ import {
   Text,
   Title,
 } from "@mantine/core";
-import { businessInfo } from "../data/business-info";
+import type { BusinessInfo } from "../types/businessInfo";
 
 export default function Contact() {
+  const [businessInfo, setBusinessInfo] = useState<BusinessInfo | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function fetchBusinessInfo() {
+      try {
+        const response = await fetch("http://localhost:8080/api/business-info");
+
+        if (!response.ok) {
+          throw new Error("Failed to load business information.");
+        }
+
+        const data: BusinessInfo = await response.json();
+        setBusinessInfo(data);
+      } catch (err) {
+        setError(
+          err instanceof Error ? err.message : "An unexpected error occurred.",
+        );
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchBusinessInfo();
+  }, []);
+
+  if (loading) {
+    return (
+      <Container py="xl">
+        <Text ta="center">Loading contact information...</Text>
+      </Container>
+    );
+  }
+
+  if (error || !businessInfo) {
+    return (
+      <Container py="xl">
+        <Text ta="center" c="red">
+          {error ?? "Contact information could not be loaded."}
+        </Text>
+      </Container>
+    );
+  }
+
   return (
     <>
       <Container size="sm" py="xl">
