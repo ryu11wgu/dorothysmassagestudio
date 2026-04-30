@@ -10,7 +10,6 @@ import {
   Stack,
 } from "@mantine/core";
 import { HeroImageBackground } from "../components/HeroImageBackground";
-import { businessHours } from "../data/business-info";
 import type { BusinessInfo } from "../types/businessInfo";
 
 export default function Home() {
@@ -41,13 +40,6 @@ export default function Home() {
     fetchBusinessInfo();
   }, []);
 
-  const rows = businessHours.map((element) => (
-    <Table.Tr key={element.day}>
-      <Table.Td>{element.day}</Table.Td>
-      <Table.Td>{element.hours}</Table.Td>
-    </Table.Tr>
-  ));
-
   if (loading) {
     return (
       <Container py="xl">
@@ -65,6 +57,13 @@ export default function Home() {
       </Container>
     );
   }
+
+  const rows = businessInfo.businessHours.map((element) => (
+    <Table.Tr key={element.id}>
+      <Table.Td>{element.day}</Table.Td>
+      <Table.Td>{element.hours}</Table.Td>
+    </Table.Tr>
+  ));
 
   return (
     <>
