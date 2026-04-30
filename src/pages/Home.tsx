@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import {
   Center,
   Container,
@@ -10,50 +9,15 @@ import {
   Stack,
 } from "@mantine/core";
 import { HeroImageBackground } from "../components/HeroImageBackground";
-import type { BusinessInfo } from "../types/businessInfo";
+import { useBusinessInfo } from "../hooks/useBusinessInfo";
 
 export default function Home() {
-  const [businessInfo, setBusinessInfo] = useState<BusinessInfo | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    async function fetchBusinessInfo() {
-      try {
-        const response = await fetch("http://localhost:8080/api/business-info");
-
-        if (!response.ok) {
-          throw new Error("Failed to load business information.");
-        }
-
-        const data: BusinessInfo = await response.json();
-        setBusinessInfo(data);
-      } catch (err) {
-        setError(
-          err instanceof Error ? err.message : "An unexpected error occurred.",
-        );
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchBusinessInfo();
-  }, []);
+  const { businessInfo, loading } = useBusinessInfo();
 
   if (loading) {
     return (
       <Container py="xl">
         <Text ta="center">Loading business information...</Text>
-      </Container>
-    );
-  }
-
-  if (error || !businessInfo) {
-    return (
-      <Container py="xl">
-        <Text ta="center" c="red">
-          {error ?? "Business information could not be loaded."}
-        </Text>
       </Container>
     );
   }
