@@ -2,7 +2,7 @@
 
 A business website built for Dorothy's Massage Studio using React, TypeScript, Vite, Mantine UI, and React Router.
 
-This project was created to support a massage therapy practice by providing a clear, mobile-friendly website where clients can learn about services, view business information, and contact the studio. The site is being actively improved to strengthen usability, responsiveness, maintainability, and overall presentation for a real business setting.
+This project supports a massage therapy practice by providing a clear, mobile-friendly website where clients can learn about services, view business information, and contact the studio. The frontend has been progressively refactored for maintainability and is now integrated with a Spring Boot backend API for business content and studio hours.
 
 ## Overview
 
@@ -22,15 +22,18 @@ Its purpose is to present the business clearly, communicate the services offered
 - Home, About, Services, and Contact pages
 - Responsive services grid
 - Reusable UI components
-- Centralized business content for contact details, hours, and homepage messaging
-- Static service and pricing data stored separately from UI rendering
+- Shared Mantine theme defaults for more consistent styling
 - Embedded Google Maps location
 - Mobile-friendly navigation
 - Click-to-call contact support
 - Responsive image sections and business-hours display
-- Shared Mantine theme defaults for more consistent styling
+- Business content fetched from a Spring Boot REST API
+- Studio hours fetched from a Spring Boot REST API
+- Static service and pricing data currently stored separately from UI rendering
 
 ## Tech Stack
+
+### Frontend
 
 - React
 - TypeScript
@@ -38,11 +41,15 @@ Its purpose is to present the business clearly, communicate the services offered
 - Mantine UI
 - React Router
 
+### Backend Integration
+
+- Spring Boot REST API
+- PostgreSQL
+
 ## Project Structure
 
     src/
       components/
-      data/
       pages/
       types/
       service-cards.json
@@ -51,9 +58,8 @@ Its purpose is to present the business clearly, communicate the services offered
 ### Structure Notes
 
 - `components/` contains reusable UI components such as navigation, hero sections, and service cards
-- `data/` contains shared business content used across pages
 - `pages/` contains routed page-level components
-- `types/` contains shared TypeScript types
+- `types/` contains shared TypeScript types for frontend data modeling
 - `service-cards.json` stores service and pricing content separately from UI rendering
 - `theme.ts` contains shared Mantine theme defaults for consistent UI styling
 
@@ -67,18 +73,18 @@ This project is being improved in structured phases to make it cleaner, more mai
 - cleaning up service card content data
 - fixing service card layout overlap issues
 - improving Home, Contact, and About page structure for readability and responsiveness
-- centralizing shared business content
 - adding shared Mantine theme defaults for more consistent styling
+- integrating the frontend with a Spring Boot backend API for business information and hours
 
 ## Planned Features
 
 The following features are planned for future development and are not fully implemented yet:
 
-- Spring Boot backend for business data and contact workflows
-- AI assistant for answering common client questions
+- Move services and pricing data into the backend
 - Admin panel for updating services, pricing, and business content
 - Online booking and appointment scheduling
 - Authentication and protected admin routes
+- AI assistant for answering common client questions
 - Improved SEO and metadata
 - Additional mobile polish and UI refinement
 
@@ -86,15 +92,21 @@ The following features are planned for future development and are not fully impl
 
 ### Install dependencies
 
-    yarn install
+```bash
+yarn install
+```
 
 ### Start the development server
 
-    yarn dev
+```bash
+yarn dev
+```
 
 ### Build for production
 
-    yarn build
+```bash
+yarn build
+```
 
 ## Business Purpose
 
@@ -102,7 +114,7 @@ This website is intended to support Dorothy's Massage Studio by improving the bu
 
 ## Future Direction
 
-The long-term direction of the project is to expand from a frontend business website into a more complete full-stack platform with stronger business workflow support, content management capabilities, and scheduling features.
+The long-term direction of the project is to continue evolving from a frontend business website into a more complete full-stack platform with stronger business workflow support, content management capabilities, and scheduling features.
 
 ## Author
 
