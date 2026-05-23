@@ -71,7 +71,7 @@ export default function Home() {
         <Center>
           <Stack gap="xs" w="100%">
             <Title order={2} ta="center">
-              Studio Hours
+              Studio Hourz
             </Title>
 
             <Text ta="center">By appointment only.</Text>
