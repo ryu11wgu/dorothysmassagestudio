@@ -15,7 +15,7 @@ export const businessInfoFallback: BusinessInfo = {
   businessHours: [
     { id: 1, day: "Monday", hours: "8:00 am - 10:00 pm", displayOrder: 1 },
     { id: 2, day: "Tuesday", hours: "8:00 am - 10:00 pm", displayOrder: 2 },
-    { id: 3, day: "Wednesday", hours: "7:00 pm - 10:00 pm", displayOrder: 3 },
+    { id: 3, day: "Wednesday", hours: "8:00 pm - 10:00 pm", displayOrder: 3 },
     { id: 4, day: "Thursday", hours: "8:00 am - 10:00 pm", displayOrder: 4 },
     { id: 5, day: "Friday", hours: "8:00 am - 10:00 pm", displayOrder: 5 },
     { id: 6, day: "Saturday", hours: "8:00 am - 10:00 pm", displayOrder: 6 },
